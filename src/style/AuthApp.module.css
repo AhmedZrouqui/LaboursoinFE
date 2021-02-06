@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.authLayer {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.authContainer {
+  font-family: "Poppins", sans-serif;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  border-radius: 5px;
+  height: 70vh;
+  background: white;
+  position: fixed;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin: auto;
+}
+
+.authContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 100%;
+  width: 80%;
+}
+
+.authContainer .container h3 {
+  color: #212121;
+  text-transform: uppercase;
+  font-size: 30px;
+  position: relative;
+}
+
+.authContainer .container h3::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 2px;
+  height: 5px;
+  width: 100%;
+  background: #212121;
+}
+
+.authContainer .container .authForm {
+  height: 60%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.authContainer .container .authForm form {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  position: relative;
+}
+
+.authContainer .container .authForm form label {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.authContainer .container .authForm form input[name="username"] {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  width: 80%;
+  height: 35px;
+  outline: none;
+}
+
+.authContainer .container .authForm form input[name="password"] {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  margin-top: 15px;
+  height: 35px;
+  width: 80%;
+  outline: none;
+}
+
+.authContainer .container .authForm form .register {
+  padding: 18px 42px;
+  display: inline-block;
+  font-size: 18px;
+  margin: 15px;
+  border: 1px solid #276359;
+  text-decoration: none;
+  color: #276359;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.authContainer .container .authForm form .register:hover {
+  color: white;
+  background-color: #276359;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.authContainer .container .authForm form button {
+  bottom: 10%;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 18px 42px;
+  background: #276359;
+  border: none;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.authContainer .container .authForm form button:hover {
+  background: #8ebba7;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #276359;
+  border-radius: 3px;
+}
+
+.authContainer .quiteAuth {
+  top: 15px;
+  right: 30px;
+  position: absolute;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.authContainer .quiteAuth:hover {
+  color: #276359;
+}
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .authContainer {
+    height: 100vh;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .authContainer .container {
+    height: 80%;
+  }
+  .authContainer .container .authForm form input[name="username"] {
+    outline: none;
+    border: 1px solid #276359;
+    margin-bottom: 20px;
+  }
+  .authContainer .container .authForm form input[name="password"] {
+    outline: none;
+    border: 1px solid #276359;
+  }
+  .authContainer .container .authForm form a {
+    color: #276359;
+  }
+  .authContainer .container .authForm form .register {
+    padding: 18px 42px;
+    display: inline-block;
+    font-size: 18px;
+    margin: 15px;
+    border: 1px solid #276359;
+    text-decoration: none;
+  }
+  .authContainer .container .authForm form .register:hover {
+    color: white;
+    background-color: #276359;
+  }
+  .authContainer .container .authForm form button {
+    margin-top: 15px;
+    position: static;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+  .authContainer {
+    height: 90vh;
+    width: 80%;
+    padding: 0 15px;
+  }
+  .authContainer .container {
+    height: 80%;
+  }
+  .authContainer .container .authForm form input[name="username"] {
+    outline: none;
+    border: 1px solid #276359;
+    margin-bottom: 20px;
+  }
+  .authContainer .container .authForm form input[name="password"] {
+    outline: none;
+    border: 1px solid #276359;
+  }
+  .authContainer .container .authForm form a {
+    color: #276359;
+  }
+  .authContainer .container .authForm form .register {
+    padding: 18px 42px;
+    display: inline-block;
+    font-size: 18px;
+    margin: 15px;
+    border: 1px solid #276359;
+    text-decoration: none;
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+  }
+  .authContainer .container .authForm form .register:hover {
+    color: white;
+    background-color: #276359;
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+  }
+  .authContainer .container .authForm form button {
+    margin-top: 15px;
+    position: static;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@media (min-width: 62em) and (max-width: 80em) {
+  .authContainer {
+    height: 90vh;
+    width: 80%;
+    padding: 0 15px;
+  }
+  .authContainer .container {
+    height: 80%;
+  }
+  .authContainer .container .authForm form input[name="username"] {
+    outline: none;
+    border: 1px solid #276359;
+    margin-bottom: 20px;
+  }
+  .authContainer .container .authForm form input[name="password"] {
+    outline: none;
+    border: 1px solid #276359;
+  }
+  .authContainer .container .authForm form a {
+    color: #276359;
+  }
+  .authContainer .container .authForm form .register {
+    padding: 18px 42px;
+    display: inline-block;
+    font-size: 18px;
+    margin: 15px;
+    border: 1px solid #276359;
+    text-decoration: none;
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+  }
+  .authContainer .container .authForm form .register:hover {
+    color: white;
+    background-color: #276359;
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+  }
+  .authContainer .container .authForm form button {
+    margin-top: 15px;
+    position: static;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+/*# sourceMappingURL=AuthApp.module.css.map */

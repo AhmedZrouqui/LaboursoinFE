@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.navContainer {
+  height: 10vh;
+  width: 100%;
+  background: #8ebba7;
+  border-bottom: 1px solid #276359;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  z-index: 1;
+}
+
+.navContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 100%;
+  width: 85%;
+}
+
+.navContainer .container .logo {
+  opacity: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-weight: 700;
+}
+
+.navContainer .container .logoText {
+  color: white;
+  text-transform: uppercase;
+  margin-left: 50px;
+  font-size: 35px;
+}
+
+.navContainer .container .nav {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navContainer .container .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navContainer .container .nav ul li {
+  padding: 0 30px;
+}
+
+.navContainer .container .nav ul a {
+  font-weight: 600;
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: relative;
+}
+
+.navContainer .container .nav ul a::after {
+  content: "";
+  width: 0px;
+  height: 5px;
+  background-color: #276359;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.navContainer .container .nav ul a:hover::after {
+  width: 100%;
+  left: 0;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.navContainer .container .nav ul a:hover {
+  color: #276359;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.hamburgerMenu {
+  display: none;
+  width: 100%;
+  background: #8ebba7;
+  border-bottom: 1px solid #276359;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburgerMenu .logo {
+  opacity: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-weight: 700;
+}
+
+.hamburgerMenu .logoText {
+  color: white;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.hamburgerMenu .open {
+  color: white;
+  font-size: 45px;
+  right: 15px;
+}
+
+.hamburgerMenu .hamNav {
+  position: absolute;
+  background: #276359;
+  height: 100vh;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.hamburgerMenu .hamNav div {
+  width: 100%;
+}
+
+.hamburgerMenu .hamNav div .close {
+  color: white;
+  font-size: 45px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.hamburgerMenu .hamNav ul {
+  margin-top: 0;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.hamburgerMenu .hamNav a {
+  font-weight: 600;
+  display: block;
+  padding: 30px 0;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.hamburgerMenu .hamNav a:hover {
+  background-color: rgba(39, 99, 89, 0.8);
+}
+
+@media (min-width: 20em) and (max-width: 40em) {
+  .navContainer {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 39em) and (max-width: 63em) {
+  .navContainer {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 64em) and (max-width: 80em) {
+  .navContainer {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.openHam {
+  left: 0 !important;
+}
+/*# sourceMappingURL=Navbar.module.css.map */

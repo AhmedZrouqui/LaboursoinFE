@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.appFooterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  width: 100%;
+  background: #212121;
+}
+
+.appFooterContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  height: 90%;
+  margin: auto;
+  margin-top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.appFooterContainer .container .siteInfos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+}
+
+.appFooterContainer .container .siteInfos p {
+  max-width: 60%;
+  text-align: center;
+  color: #dcdcdc;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.appFooterContainer .container .siteInfos button {
+  max-width: 190px;
+  height: 50px;
+  padding: 7px 30px;
+  font-size: 14px;
+  border: none;
+  background-color: #8ebba7;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.appFooterContainer .container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+  height: 80%;
+}
+
+.appFooterContainer .container .nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.appFooterContainer .container .nav ul li {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.appFooterContainer .container .nav ul li a {
+  color: #dcdcdc;
+  font-weight: 500;
+}
+
+.appFooterContainer .container .nav ul li a:hover {
+  color: #8ebba7;
+}
+
+.appFooterContainer .container .followUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+  height: 80%;
+}
+
+.appFooterContainer .container .followUs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.appFooterContainer .container .followUs ul li {
+  padding: 0 15px;
+}
+
+.appFooterContainer .container .followUs ul li a {
+  color: #8ebba7;
+  font-size: 25px;
+}
+
+.appFooterContainer .Title {
+  color: #dcdcdc;
+  text-transform: uppercase;
+  font-size: 30px;
+  position: relative;
+}
+
+.appFooterContainer .Title::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 2px;
+  height: 5px;
+  width: 30px;
+  background: #dcdcdc;
+}
+
+.appFooterContainer .copyright {
+  background: #dcdcdc;
+  height: 14%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.appFooterContainer .copyrightText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #212121;
+}
+
+.appFooterContainer .copyright .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.appFooterContainer .copyright .icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.appFooterContainer .copyright .icons ul li {
+  padding: 0 8px;
+  color: #212121;
+  font-size: 24px;
+}
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .appFooterContainer {
+    height: 20vh;
+  }
+  .appFooterContainer .container {
+    display: none;
+  }
+  .appFooterContainer .copyright {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .appFooterContainer .copyrightText {
+    font-size: 15px;
+  }
+  .appFooterContainer .copyright .icons ul {
+    padding: 0;
+  }
+  .appFooterContainer .copyright .icons ul li {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+  .appFooterContainer {
+    height: 15vh;
+  }
+  .appFooterContainer .container {
+    display: none;
+  }
+  .appFooterContainer .copyright {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .appFooterContainer .copyrightText {
+    font-size: 23px;
+  }
+  .appFooterContainer .copyright .icons ul {
+    padding: 0;
+  }
+  .appFooterContainer .copyright .icons ul li {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 62em) and (max-width: 80em) {
+  .appFooterContainer {
+    height: 15vh;
+  }
+  .appFooterContainer .container {
+    display: none;
+  }
+  .appFooterContainer .copyright {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .appFooterContainer .copyrightText {
+    font-size: 23px;
+  }
+  .appFooterContainer .copyright .icons ul {
+    padding: 0;
+  }
+  .appFooterContainer .copyright .icons ul li {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=AppFooter.module.css.map */

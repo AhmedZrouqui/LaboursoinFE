@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,OAAO,CAAC,0LAAI;AFGZ,AAAA,yBAAyB,CAAC;EACxB,MAAM,EAAE,IAAI;EACZ,WAAW,ECCN,SAAS,EAAE,UAAU;EDA1B,cAAc,EAAE,SAAS;EACzB,SAAS,EAAE,IAAI;EACf,KAAK,ECJW,OAAO;EDKvB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,CAAC;CACX",
+    "sources": [
+        "MyAccountHeader.module.scss",
+        "variables.scss",
+        "fonts.scss"
+    ],
+    "names": [],
+    "file": "MyAccountHeader.module.css"
+}

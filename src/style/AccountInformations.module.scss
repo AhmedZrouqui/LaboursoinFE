@@ -1,0 +1,10 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+.accountInformationsContainer {
+  height: 92%;
+  width: 100%;
+  background: $light-grey-color;
+  display: flex;
+  margin: auto;
+}

@@ -1,0 +1,178 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+.whyUsContainer {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  font-family: $font;
+  padding: 20px 0;
+  .tray {
+    width: 40%;
+    height: 2px;
+    background-color: $dark-green-color;
+    opacity: 0.4;
+  }
+
+  .titleContainer {
+    display: flex;
+    margin: auto;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      color: $dark-green-color;
+      text-transform: uppercase;
+      font-size: 28px;
+    }
+
+    .details {
+      text-align: center;
+      font-weight: 500;
+      max-width: 60%;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex: 2;
+    .reason {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      margin: 15px;
+      padding: 10px;
+      background: white;
+      width: 400px;
+      height: 500px;
+      box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2),
+        0 2px 20px 0 rgba(0, 0, 0, 0.19);
+
+      &Title {
+        color: $dark-green-color;
+        text-transform: uppercase;
+        font-size: 26px;
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 30%;
+          height: 7px;
+          bottom: -5px;
+          left: 50%;
+          background: $light-green-color;
+          transform: translateX(-50%);
+          position: absolute;
+        }
+      }
+
+      &Icon {
+        color: $light-green-color;
+        font-size: 70px;
+      }
+
+      &Details {
+        max-width: 80%;
+        text-align: center;
+        font-size: 18px;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .whyUsContainer {
+    .titleContainer {
+      text-align: center;
+      .details {
+        display: none;
+      }
+    }
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .reason {
+        height: 20%;
+        width: 90%;
+        &Title {
+          &::after {
+            display: none;
+          }
+        }
+        &Details {
+          display: none;
+        }
+        &Icon {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+  .whyUsContainer {
+    .titleContainer {
+    }
+    .container {
+      flex-direction: column;
+      align-items: center;
+      width: 50vh;
+      .reason {
+        height: 25%;
+        width: 90%;
+        &Title {
+          &::after {
+            display: none;
+          }
+        }
+        &Details {
+          display: none;
+        }
+        &Icon {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 64em) and (max-width: 80em) {
+  .whyUsContainer {
+    .titleContainer {
+      .title {
+        font-size: 30px;
+      }
+      .details {
+        display: none;
+      }
+    }
+    .container {
+      flex-direction: column;
+      align-items: center;
+      width: 50vh;
+      .reason {
+        height: 30%;
+        width: 90%;
+        &Title {
+          &::after {
+            display: none;
+          }
+        }
+        &Details {
+          display: none;
+        }
+        &Icon {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

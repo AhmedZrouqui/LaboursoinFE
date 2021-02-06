@@ -1,0 +1,272 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+.authLayer {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.authContainer {
+  font-family: $font;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  border-radius: 5px;
+  height: 70vh;
+  background: white;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    h3 {
+      color: $dark-grey-color;
+      text-transform: uppercase;
+      font-size: 30px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 2px;
+        height: 5px;
+        width: 100%;
+        background: $dark-grey-color;
+      }
+    }
+
+    .authForm {
+      height: 60%;
+      width: 80%;
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      form {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        position: relative;
+        label {
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+        input[name="username"] {
+          text-align: center;
+          margin-top: 15px;
+          margin-bottom: 40px;
+          font-size: 14px;
+          width: 80%;
+          height: 35px;
+          outline: none;
+        }
+        input[name="password"] {
+          text-align: center;
+          margin-bottom: 20px;
+          font-size: 16px;
+          margin-top: 15px;
+          height: 35px;
+          width: 80%;
+          outline: none;
+        }
+        .register {
+          padding: 18px 42px;
+          display: inline-block;
+          font-size: 18px;
+          margin: 15px;
+          border: 1px solid $dark-green-color;
+          text-decoration: none;
+          color: $dark-green-color;
+          transition: 0.2s all ease;
+          &:hover {
+            color: white;
+            background-color: $dark-green-color;
+            transition: 0.2s all ease;
+          }
+        }
+        button {
+          bottom: 10%;
+          margin-top: 20px;
+          font-family: $font;
+          padding: 18px 42px;
+          background: $dark-green-color;
+          border: none;
+          color: white;
+          font-size: 18px;
+          outline: none;
+          cursor: pointer;
+          transition: 0.3s all ease;
+          &:hover {
+            background: $light-green-color;
+            transition: 0.3s all ease;
+            color: $dark-green-color;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .quiteAuth {
+    top: 15px;
+    right: 30px;
+    position: absolute;
+    font-size: 25px;
+    cursor: pointer;
+    &:hover {
+      color: $dark-green-color;
+    }
+  }
+}
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .authContainer {
+    height: 100vh;
+    width: 100%;
+    padding: 0 15px;
+    .container {
+      height: 80%;
+      .authForm {
+        form {
+          input[name="username"] {
+            outline: none;
+            border: 1px solid $dark-green-color;
+            margin-bottom: 20px;
+          }
+          input[name="password"] {
+            outline: none;
+            border: 1px solid $dark-green-color;
+          }
+          a {
+            color: $dark-green-color;
+          }
+          .register {
+            padding: 18px 42px;
+            display: inline-block;
+            font-size: 18px;
+            margin: 15px;
+            border: 1px solid $dark-green-color;
+            text-decoration: none;
+            &:hover {
+              color: white;
+              background-color: $dark-green-color;
+            }
+          }
+          button {
+            margin-top: 15px;
+            position: static;
+            transform: translateX(0%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+  .authContainer {
+    height: 90vh;
+    width: 80%;
+    padding: 0 15px;
+    .container {
+      height: 80%;
+      .authForm {
+        form {
+          input[name="username"] {
+            outline: none;
+            border: 1px solid $dark-green-color;
+            margin-bottom: 20px;
+          }
+          input[name="password"] {
+            outline: none;
+            border: 1px solid $dark-green-color;
+          }
+          a {
+            color: $dark-green-color;
+          }
+          .register {
+            padding: 18px 42px;
+            display: inline-block;
+            font-size: 18px;
+            margin: 15px;
+            border: 1px solid $dark-green-color;
+            text-decoration: none;
+            transition: 0.2s all ease;
+            &:hover {
+              color: white;
+              background-color: $dark-green-color;
+              transition: 0.2s all ease;
+            }
+          }
+          button {
+            margin-top: 15px;
+            position: static;
+            transform: translateX(0%);
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 62em) and (max-width: 80em) {
+  .authContainer {
+    height: 90vh;
+    width: 80%;
+    padding: 0 15px;
+    .container {
+      height: 80%;
+      .authForm {
+        form {
+          input[name="username"] {
+            outline: none;
+            border: 1px solid $dark-green-color;
+            margin-bottom: 20px;
+          }
+          input[name="password"] {
+            outline: none;
+            border: 1px solid $dark-green-color;
+          }
+          a {
+            color: $dark-green-color;
+          }
+          .register {
+            padding: 18px 42px;
+            display: inline-block;
+            font-size: 18px;
+            margin: 15px;
+            border: 1px solid $dark-green-color;
+            text-decoration: none;
+            transition: 0.2s all ease;
+            &:hover {
+              color: white;
+              background-color: $dark-green-color;
+              transition: 0.2s all ease;
+            }
+          }
+          button {
+            margin-top: 15px;
+            position: static;
+            transform: translateX(0%);
+          }
+        }
+      }
+    }
+  }
+}

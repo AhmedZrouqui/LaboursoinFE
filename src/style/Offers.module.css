@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.offersContainer {
+  height: 100vh;
+  width: 100%;
+  background: #dcdcdc;
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offersContainer .offers {
+  width: 80%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.offersContainer .offers h3 {
+  font-size: 100px;
+  text-align: center;
+}
+
+.offersContainer .offerButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin: auto;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offersContainer .offerButtons button {
+  max-height: 70px;
+  padding: 0 50px;
+  margin: 0 50px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.offersContainer .offerButtons .puButton {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #276359;
+  color: white;
+  border: none;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.offersContainer .offerButtons .puButton:hover {
+  background: #8ebba7;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  color: #276359;
+}
+
+.offersContainer .offerButtons .saButton {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  color: #276359;
+  border: 3px solid #276359;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.offersContainer .offerButtons .saButton:hover {
+  background: #276359;
+  color: white;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .offersContainer .offers h3 {
+    font-size: 40px;
+  }
+  .offersContainer .offerButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offersContainer .offerButtons button {
+    margin: 5px 0;
+    height: 150px;
+  }
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+  .offersContainer .offers h3 {
+    font-size: 80px;
+  }
+  .offersContainer .offerButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offersContainer .offerButtons button {
+    margin: 5px 0;
+    height: 200px;
+  }
+}
+
+@media (min-width: 62em) and (max-width: 80em) {
+  .offersContainer .offers h3 {
+    font-size: 90px;
+  }
+  .offersContainer .offerButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offersContainer .offerButtons button {
+    margin: 20px 0;
+    height: 200px;
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=Offers.module.css.map */

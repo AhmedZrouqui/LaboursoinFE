@@ -1,0 +1,15 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+.myAccountHeaderContainer {
+  height: 20vh;
+  font-family: $font;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: $dark-grey-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}

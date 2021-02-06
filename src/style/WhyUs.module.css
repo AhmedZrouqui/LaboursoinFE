@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.whyUsContainer {
+  width: 90%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 0;
+}
+
+.whyUsContainer .tray {
+  width: 40%;
+  height: 2px;
+  background-color: #276359;
+  opacity: 0.4;
+}
+
+.whyUsContainer .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.whyUsContainer .titleContainer .title {
+  color: #276359;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.whyUsContainer .titleContainer .details {
+  text-align: center;
+  font-weight: 500;
+  max-width: 60%;
+}
+
+.whyUsContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.whyUsContainer .container .reason {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  background: white;
+  width: 400px;
+  height: 500px;
+  -webkit-box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.whyUsContainer .container .reasonTitle {
+  color: #276359;
+  text-transform: uppercase;
+  font-size: 26px;
+  position: relative;
+}
+
+.whyUsContainer .container .reasonTitle::after {
+  content: "";
+  width: 30%;
+  height: 7px;
+  bottom: -5px;
+  left: 50%;
+  background: #8ebba7;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+}
+
+.whyUsContainer .container .reasonIcon {
+  color: #8ebba7;
+  font-size: 70px;
+}
+
+.whyUsContainer .container .reasonDetails {
+  max-width: 80%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .whyUsContainer .titleContainer {
+    text-align: center;
+  }
+  .whyUsContainer .titleContainer .details {
+    display: none;
+  }
+  .whyUsContainer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .whyUsContainer .container .reason {
+    height: 20%;
+    width: 90%;
+  }
+  .whyUsContainer .container .reasonTitle::after {
+    display: none;
+  }
+  .whyUsContainer .container .reasonDetails {
+    display: none;
+  }
+  .whyUsContainer .container .reasonIcon {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+  .whyUsContainer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50vh;
+  }
+  .whyUsContainer .container .reason {
+    height: 25%;
+    width: 90%;
+  }
+  .whyUsContainer .container .reasonTitle::after {
+    display: none;
+  }
+  .whyUsContainer .container .reasonDetails {
+    display: none;
+  }
+  .whyUsContainer .container .reasonIcon {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 64em) and (max-width: 80em) {
+  .whyUsContainer .titleContainer .title {
+    font-size: 30px;
+  }
+  .whyUsContainer .titleContainer .details {
+    display: none;
+  }
+  .whyUsContainer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50vh;
+  }
+  .whyUsContainer .container .reason {
+    height: 30%;
+    width: 90%;
+  }
+  .whyUsContainer .container .reasonTitle::after {
+    display: none;
+  }
+  .whyUsContainer .container .reasonDetails {
+    display: none;
+  }
+  .whyUsContainer .container .reasonIcon {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=WhyUs.module.css.map */

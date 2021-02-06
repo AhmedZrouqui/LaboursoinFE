@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,OAAO,CAAC,0LAAI",
+    "sources": [
+        "MyAccount.module.scss",
+        "variables.scss",
+        "fonts.scss"
+    ],
+    "names": [],
+    "file": "MyAccount.module.css"
+}

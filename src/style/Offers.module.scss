@@ -1,0 +1,123 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+.offersContainer {
+  height: 100vh;
+  width: 100%;
+  background: $light-grey-color;
+  font-family: $font;
+  display: flex;
+  flex-direction: column;
+
+  .offers {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+
+    h3 {
+      font-size: 100px;
+      text-align: center;
+    }
+  }
+
+  .offerButtons {
+    display: flex;
+    flex: 2;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+
+    button {
+      max-height: 70px;
+      padding: 0 50px;
+      margin: 0 50px;
+      font-family: $font;
+      cursor: pointer;
+    }
+
+    .puButton {
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      background: $dark-green-color;
+      color: white;
+      border: none;
+      transition: 0.5s all ease;
+
+      &:hover {
+        background: $light-green-color;
+        transition: 0.5s all ease;
+        color: $dark-green-color;
+      }
+    }
+
+    .saButton {
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      background: transparent;
+      color: $dark-green-color;
+      border: 3px solid $dark-green-color;
+      transition: 0.5s all ease;
+      &:hover {
+        background: $dark-green-color;
+        color: white;
+        transition: 0.5s all ease;
+      }
+    }
+  }
+}
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .offersContainer {
+    .offers {
+      h3 {
+        font-size: 40px;
+      }
+    }
+    .offerButtons {
+      flex-direction: column;
+      button {
+        margin: 5px 0;
+        height: 150px;
+      }
+    }
+  }
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+  .offersContainer {
+    .offers {
+      h3 {
+        font-size: 80px;
+      }
+    }
+    .offerButtons {
+      flex-direction: column;
+      button {
+        margin: 5px 0;
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media (min-width: 62em) and (max-width: 80em) {
+  .offersContainer {
+    .offers {
+      h3 {
+        font-size: 90px;
+      }
+    }
+    .offerButtons {
+      flex-direction: column;
+      button {
+        margin: 20px 0;
+        height: 200px;
+        font-size: 18px;
+      }
+    }
+  }
+}

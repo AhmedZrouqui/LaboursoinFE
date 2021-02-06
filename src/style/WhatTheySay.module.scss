@@ -1,0 +1,133 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+.whatTheySayContainer {
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  font-family: $font;
+  padding: 20px 0;
+  .tray {
+    width: 40%;
+    height: 2px;
+    background-color: $dark-green-color;
+    opacity: 0.4;
+  }
+
+  .titleContainer {
+    display: flex;
+    margin: auto;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      color: $dark-green-color;
+      text-transform: uppercase;
+      font-size: 28px;
+    }
+
+    .details {
+      text-align: center;
+      font-weight: 500;
+      max-width: 60%;
+    }
+  }
+
+  .noteContainer {
+    display: flex;
+    margin: auto;
+    flex: 2;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .note {
+      display: flex;
+      flex-direction: column;
+      background: RGBA(142, 187, 167, 0.2);
+      width: 90%;
+      margin: 10px 0;
+      padding: 5px 10px;
+      border-radius: 3px;
+      word-wrap: break-word;
+      &Info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .usernameDisplay {
+          font-weight: 400;
+          font-size: 14px;
+          span {
+            font-weight: 500;
+          }
+        }
+        .dateDisplay {
+          margin-top: -17px;
+          font-style: italic;
+          font-weight: 300;
+          font-size: 13px;
+        }
+      }
+      .trayNote {
+        width: 100%;
+        height: 2px;
+        background-color: $light-green-color;
+        opacity: 0.4;
+      }
+      &Text {
+        display: flex;
+        word-wrap: break-word;
+
+        p {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      background: transparent;
+      width: 5px;
+      color: $light-green-color;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: RGBA(142, 187, 167, 0.4);
+    }
+  }
+}
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .whatTheySayContainer {
+    .titleContainer {
+      .title {
+        text-align: center;
+        font-size: 25px;
+      }
+      .details {
+        display: none;
+      }
+    }
+
+    .noteContainer {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+  .whatTheySayContainer {
+    .noteContainer {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
