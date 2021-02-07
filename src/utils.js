@@ -2,7 +2,11 @@ const endpoint = "http://localhost:8000/graphql";
 const meQuery = `
 query{
     me{
-        username
+        username,
+        firstname,
+        lastname,
+        password,
+        email
     }
 }
 `

@@ -4,17 +4,16 @@ import AccountManager from './compenents_MA/AccountManager';
 import MyAccountHeader from './compenents_MA/MyAccountHeader';
 import s from './style/MyAccount.module.css';
 
-export default function MyAccount(props) {
-    const {isConnected, setIsConnected} = props
+export default function MyAccount() {
     let history = useHistory();
     useEffect(() => {
-        if(!isConnected) history.push('/')
+        if(localStorage.getItem("token") === null) history.push('/')
     }, [])
 
     return (
         <div className={s.myAccountContainer}>
             <MyAccountHeader />
-            <AccountManager isConnected = {isConnected}  setIsConnected = {setIsConnected} />
+            <AccountManager />
         </div>
     )
 }

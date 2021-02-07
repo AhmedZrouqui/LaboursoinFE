@@ -6,5 +6,16 @@
   width: 100%;
   background: $light-grey-color;
   display: flex;
+  flex-direction: column;
   margin: auto;
+
+  .infosHeader {
+    margin: auto;
+  }
+
+  .userInformationsContainer {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+  }
 }

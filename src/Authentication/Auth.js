@@ -1,16 +1,15 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
+import axios from 'axios';
+import utils from '../utils';
 
 
-function Auth({children}) {
-
-    const [isConnected, setIsConnected] = useState(false)
-
+async function Auth() {
   //function to check if the JWT is Valid or not
 
   //this will be executed once every refresh.
-    useEffect( async () => {
+    let isConnected = false
 
-        async function checkJWTValidity(){
+    async function checkJWTValidity(){
         try{
             axios.defaults.headers.post['Authorization'] = "JWT "+localStorage.getItem("token")
 
@@ -22,29 +21,30 @@ function Auth({children}) {
             //checking if the returned Data is NULL, if so, tokens would be deleted from localStorage.
             //else token variables will remain for its still valid.
             if(requestdata.data.data.me === null){
-            const tokenItems = await getNewJWT(localStorage.getItem("refreshToken"))
-            if(tokenItems.length === 0){
-                localStorage.removeItem("token")
-                localStorage.removeItem("refreshToken")
-                setIsConnected(false)
+                const tokenItems = await getNewJWT(localStorage.getItem("refreshToken"))
+                if(tokenItems.length === 0){
+                    localStorage.removeItem("token")
+                    localStorage.removeItem("refreshToken")
+                    isConnected = false
+
+                }
+                else{
+                    localStorage.setItem("token", tokenItems[0])
+                    localStorage.setItem("refreshToken",  tokenItems[1])
+                    isConnected = true
+                    
+                }
             }
             else{
-                localStorage.setItem("token", tokenItems[0])
-                localStorage.setItem("refreshToken",  tokenItems[1])
-                setIsConnected(true)
-            }
-            }
-            else{
-            console.log(isConnected)
-            setIsConnected(true)
+                isConnected = true
             }
         }
         catch(err){
             console.log(err)
         }
-        }
+    }
     
-        async function getNewJWT(refreshToken){
+    async function getNewJWT(refreshToken){
         const token = []
         try{
             //fetching refreshToken data from API
@@ -68,13 +68,11 @@ function Auth({children}) {
             console.log(err)
         }
         return token
-        }
+    }
 
-        if (!isConnected) checkJWTValidity();
+    await checkJWTValidity();
 
-    }, [isConnected])
-    
-    return isConnected ? children: null;
+    return isConnected
 }
 
 export default Auth

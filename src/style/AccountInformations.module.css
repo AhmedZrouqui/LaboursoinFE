@@ -6,6 +6,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: auto;
+}
+
+.accountInformationsContainer .infosHeader {
+  margin: auto;
+}
+
+.accountInformationsContainer .userInformationsContainer {
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
 }
 /*# sourceMappingURL=AccountInformations.module.css.map */
